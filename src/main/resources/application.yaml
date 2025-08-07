@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://client-managemet.cfkgwx0qfo1z.us-east-1.rds.amazonaws.com:3306/client-management}
+    username: ${SPRING_DATASOURCE_USERNAME:admin}
+    password: ${SPRING_DATASOURCE_PASSWORD:NUAhb5pDFiNvON3fXuTs}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none   # IMPORTANTE para no interferir con Flyway
+      show-sql: true
+  flyway:
+    enabled: true
